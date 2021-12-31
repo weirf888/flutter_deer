@@ -15,6 +15,7 @@ import 'package:flutter_deer/util/device_utils.dart';
 import 'package:flutter_deer/util/handle_error_utils.dart';
 import 'package:flutter_deer/util/log_utils.dart';
 import 'package:flutter_deer/util/theme_utils.dart';
+import 'package:flutter_displaymode/flutter_displaymode.dart';
 import 'package:flutter_gen/gen_l10n/deer_localizations.dart';
 import 'package:oktoast/oktoast.dart';
 import 'package:provider/provider.dart';
@@ -37,6 +38,9 @@ Future<void> main() async {
 
   /// sp初始化
   await SpUtil.getInstance();
+
+  /// 开启高刷
+  FlutterDisplayMode.setHighRefreshRate();
 
   /// 1.22 预览功能: 在输入频率与显示刷新率不匹配情况下提供平滑的滚动效果
   // GestureBinding.instance?.resamplingEnabled = true;

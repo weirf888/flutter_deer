@@ -74,6 +74,7 @@ dependencies:
   scratcher: ^2.1.0
   # 动画效果 https://github.com/xvrh/lottie-flutter
   lottie: ^1.2.1
+  flutter_displaymode: ^0.3.2
 
 # https://github.com/simplezhli/flutter_deer/issues/187
 dependency_overrides:
